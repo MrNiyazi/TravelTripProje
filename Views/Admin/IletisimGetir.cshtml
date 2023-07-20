@@ -1,0 +1,31 @@
+﻿@model TravelTripProje.Models.Sınıflar.iletisim 
+@{
+    ViewBag.Title = "IletisimGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Mesaj Okuma Sayfası</h2>
+<br />
+@Html.LabelFor(x => x.ID)
+@Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+<br />
+@Html.LabelFor(x => x.AdSoyad)
+@Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control" })
+<br />
+@Html.LabelFor(x => x.Konu)
+@Html.TextBoxFor(x => x.Konu, new { @class = "form-control" })
+<br />
+@Html.LabelFor(x => x.Mail)
+@Html.TextAreaFor(x => x.Mail, new { @class = "form-control" })
+<br />
+@Html.LabelFor(x => x.Mesaj)
+@Html.TextAreaFor(x => x.Mesaj, 15, 1, new { @class = "form-control" })
+<br />
+
+    <tr>
+    <td> <a href="mailto:" class="btn btn-success"> Mesajı Cevapla</a></td>
+    </tr>
+
+    
+
+
+
